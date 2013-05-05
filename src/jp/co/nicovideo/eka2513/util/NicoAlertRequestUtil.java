@@ -7,6 +7,11 @@ import jp.co.nicovideo.eka2513.exception.UserException;
 
 public class NicoAlertRequestUtil extends RequestUtil {
 
+	/**
+	 * alertstatusを取得します
+	 * @param ticket
+	 * @return
+	 */
 	public String getAlertStatus(String ticket) {
 		final String url = "http://live.nicovideo.jp/api/getalertstatus";
 		String param = null;
@@ -16,13 +21,13 @@ public class NicoAlertRequestUtil extends RequestUtil {
 		}
 		return get(url + "?" + param);
 	}
+
 	/**
-	 *
-	 * @param user
-	 * @param passwd
+	 * getPlayerStatusを呼び出します
+	 * @param lv
 	 * @return
 	 */
-	public String getPlayerStaus(String lv) {
+	public String getPlayerStatus(String lv) {
 		final String url = "http://live.nicovideo.jp/api/getplayerstatus?v=%s";
 		String result = get(String.format(url, lv));
 		return result;

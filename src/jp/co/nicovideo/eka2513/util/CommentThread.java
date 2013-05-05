@@ -94,6 +94,10 @@ public class CommentThread extends Thread implements NicoAlertConstants {
 				Thread.sleep(10);
 			}
 		} catch (IOException e) {
+			System.err.println("parameters");
+			for (Map.Entry<String, String> entry : params.entrySet()) {
+				System.err.println(entry.getKey() + "=" + entry.getValue());
+			}
 			throw new RuntimeException(e);
 		} catch (InterruptedException e) {
 			e.printStackTrace();

@@ -1,7 +1,12 @@
 package jp.co.nicovideo.eka2513.event;
 import java.util.EventObject;
 
-
+/**
+ * つくったけどいらんかった
+ * @author eka2513
+ *
+ */
+@Deprecated
 public class NicoCommentReceivedEvent extends EventObject {
 
 	private static final long serialVersionUID = 5917421742857203927L;

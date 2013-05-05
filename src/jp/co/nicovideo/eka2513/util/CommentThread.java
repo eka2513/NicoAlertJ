@@ -66,7 +66,7 @@ public class CommentThread extends Thread implements NicoAlertConstants {
 								//ラスコメ＜１だったら
 								String ticket = StringUtil.groupMatchFirst("ticket=\"([^\"]+)\"", tag);
 								String mail = "";
-								String vpos = calcVpos(params.get(START_TIME));
+								String vpos = calcVpos(params.get(BASE_TIME), params.get(TIME));
 								Integer block = lastResponseNo / 100;
 //								String comment = String.format("%dコメゲット", lastResponseNo+1);
 								NicoAlertRequestUtil util = new NicoAlertRequestUtil();
@@ -119,12 +119,8 @@ public class CommentThread extends Thread implements NicoAlertConstants {
 		}
 	}
 
-	public String calcVpos(String startTime) {
-
-		String s = String.valueOf(100*(System.currentTimeMillis()/1000 - Long.valueOf(startTime)));
-		if (StringUtil.inull2Val(s) < 200)
-			s = "200";
-		return s;
+	public String calcVpos(String startTime, String time) {
+		return String.valueOf((Long.valueOf(time) - Long.valueOf(startTime))*100);
 	}
 
 }

@@ -79,8 +79,12 @@ public class XMLUtil implements NicoAlertConstants {
             result.put(PORT, xpath.evaluate(location, doc));
             location = "//ms/thread/text()";
             result.put(THREAD, xpath.evaluate(location, doc));
+            location = "/getplayerstatus/@time";
+            result.put(TIME, xpath.evaluate(location, doc));
             location = "//stream/start_time";
             result.put(START_TIME, xpath.evaluate(location, doc));
+            location = "//stream/base_time";
+            result.put(BASE_TIME, xpath.evaluate(location, doc));
             location = "//user/user_id";
             result.put(USER_ID, xpath.evaluate(location, doc));
             location = "//user/is_premium";

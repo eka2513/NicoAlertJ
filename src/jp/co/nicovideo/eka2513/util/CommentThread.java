@@ -52,7 +52,7 @@ public class CommentThread extends Thread implements NicoAlertConstants {
 	        out.flush();
 
 	        String xml = null;
-
+	        int i=0;
 			while (true) {
 				if (in.available() > 0) {
 					char[] data = new char[in.available()];
@@ -91,6 +91,9 @@ public class CommentThread extends Thread implements NicoAlertConstants {
 						}
 					}
 				}
+				i++;
+				if (i > 100)
+					break;	//永久ループ防止
 				Thread.sleep(10);
 			}
 		} catch (IOException e) {

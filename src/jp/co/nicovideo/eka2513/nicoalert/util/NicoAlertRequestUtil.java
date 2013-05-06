@@ -1,9 +1,9 @@
-package jp.co.nicovideo.eka2513.util;
+package jp.co.nicovideo.eka2513.nicoalert.util;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
-import jp.co.nicovideo.eka2513.exception.UserException;
+import jp.co.nicovideo.eka2513.nicoalert.exception.UserException;
 
 public class NicoAlertRequestUtil extends RequestUtil {
 

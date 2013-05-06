@@ -1,4 +1,4 @@
-package jp.co.nicovideo.eka2513.util;
+package jp.co.nicovideo.eka2513.nicoalert.util;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,10 +9,10 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Map;
 
-import jp.co.nicovideo.eka2513.constants.NicoAlertConstants;
-import jp.co.nicovideo.eka2513.event.NicoAlertReceivedEvent;
-import jp.co.nicovideo.eka2513.event.NicoAlertReceivedEventListener;
-import jp.co.nicovideo.eka2513.exception.UserException;
+import jp.co.nicovideo.eka2513.nicoalert.constants.NicoAlertConstants;
+import jp.co.nicovideo.eka2513.nicoalert.event.NicoAlertReceivedEvent;
+import jp.co.nicovideo.eka2513.nicoalert.event.NicoAlertReceivedEventListener;
+import jp.co.nicovideo.eka2513.nicoalert.exception.UserException;
 
 public class AlertThread extends Thread implements NicoAlertConstants {
 

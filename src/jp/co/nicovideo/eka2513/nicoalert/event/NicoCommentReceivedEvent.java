@@ -1,4 +1,4 @@
-package jp.co.nicovideo.eka2513.event;
+package jp.co.nicovideo.eka2513.nicoalert.event;
 import java.util.EventObject;
 
 /**

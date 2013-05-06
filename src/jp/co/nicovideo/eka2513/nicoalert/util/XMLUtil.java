@@ -1,4 +1,4 @@
-package jp.co.nicovideo.eka2513.util;
+package jp.co.nicovideo.eka2513.nicoalert.util;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -16,8 +16,8 @@ import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 
-import jp.co.nicovideo.eka2513.constants.NicoAlertConstants;
-import jp.co.nicovideo.eka2513.exception.UserException;
+import jp.co.nicovideo.eka2513.nicoalert.constants.NicoAlertConstants;
+import jp.co.nicovideo.eka2513.nicoalert.exception.UserException;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;

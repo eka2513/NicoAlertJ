@@ -1,4 +1,4 @@
-package jp.co.nicovideo.eka2513.util;
+package jp.co.nicovideo.eka2513.nicoalert.util;
 
 
 import java.util.ArrayList;

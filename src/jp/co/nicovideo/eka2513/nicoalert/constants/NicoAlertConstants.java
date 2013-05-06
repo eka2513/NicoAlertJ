@@ -1,4 +1,4 @@
-package jp.co.nicovideo.eka2513.constants;
+package jp.co.nicovideo.eka2513.nicoalert.constants;
 
 public interface NicoAlertConstants {
 

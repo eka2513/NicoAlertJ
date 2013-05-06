@@ -1,4 +1,4 @@
-package jp.co.nicovideo.eka2513.exception;
+package jp.co.nicovideo.eka2513.nicoalert.exception;
 
 public class UserException extends RuntimeException {
 
